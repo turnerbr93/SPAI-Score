@@ -1,0 +1,249 @@
+
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+ font-family: 'Nunito', sans-serif;
+  background: #ffffff;
+  color: #858d91;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.container {
+	width: 100%;
+  margin: auto;
+  padding: 0px 5px;
+	overflow: hidden;
+}
+
+/*Nav Section*/
+i.fas.fa-home {
+  color: white;
+}
+
+nav #navbarNav ul.navbar-nav li > a {
+	color: white;
+	font-weight: bold;
+	transition: color .2s;
+}
+
+ul.navbar-nav {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav #navbarNav ul.navbar-nav li.active > a {
+	color: orange;
+}
+
+/*Home - Main Section*/
+.columnHome {
+  float: left;
+  width: 45%;
+  padding: 0px 5px;
+}
+
+h1.home-title, h1.search-title {
+	font-size: 55px;
+  font-weight: bold;
+  line-height: 40px;
+}
+
+div#text.columnHome {
+  padding-top: 50px;
+  margin-left: 40px;
+}
+
+div#text.columnHome p{
+  padding-top: 30px;
+}
+
+/*Search - Main Section */
+div.col-7 {
+  padding-top: 20px;
+  padding-right: 50px;
+}
+
+h1.search-title {
+  margin-right: 10px;
+}
+
+div.col-7 p {
+  padding-top: 20px;
+}
+
+img#visual2 {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+div.col-5 {
+  padding-right: 5px;
+}
+
+form {
+  margin-top: 1px;
+  padding: 5px 10px;
+  color: #2e2e1f;
+  background-color: #ccccb3;
+  font-weight: bold;
+  border: #858d91 solid 1px;
+  border-radius: 5px;
+}
+
+h4.formHeader {
+  font-weight: bold;
+  margin-bottom: 2px;
+  padding: 5px 10px;
+  color: #2e2e1f;
+  background-color: #ccccb3;
+  font-weight: bold;
+  border: #858d91 solid 1px;
+  border-radius: 5px;
+}
+
+div.form-group#formTitle {
+  padding: 0;
+  margin: 0;
+}
+
+button.btn {
+  background-color: #2e2e1f;
+  color: #ebebe0;
+}
+
+/* Clear floats after the columns */
+.rowHome:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Live SPAI */
+nav#textNav.navbar {
+  height: 60px;
+  background-color: #ccccb3;
+  color: #2e2e1f;
+  box-shadow: 10px 0px 5px #2e2e1f;
+  margin-bottom: 10px;
+}
+
+div.navbar-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul.nav-text li{
+  list-style: none;
+  display: inline-block;
+  font-weight: bold;
+}
+
+ul.nav-text li > a {
+  color: #2e2e1f;
+  text-decoration: underline;
+  padding-left: 25px;
+  font-weight: normal;
+}
+
+h2#live-title {
+  text-align: center;
+  color: #ff6600;
+  font-weight: bold;
+}
+
+img#score {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/*Sponsorship Page*/
+div#sponsorCol-4.col-4 {
+  padding: 0;
+}
+
+div.scoreRating {
+  display: block;
+  background-color: #ccccb3;
+  border: #858d91 solid 1px;
+  /* padding: 10px 50px; */
+}
+/* img#techeetah {
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+h3#live-title, p#score-text, h3#ratingValue {
+  color: #2e2e1f;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+h3#live-title {
+  color: #ff6600;
+}
+
+h3#ratingValue {
+  color: #27bc3b;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  .columnHome {
+    width: 100%;
+  }
+  img#score {
+    width: 90%;
+  }
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  div.col-7 {
+    width: 50%;
+  }
+  img#visual2{
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  nav#textNav.navbar {
+  height: auto;
+  }
+  /* div.col-7, div.col-5 {
+    height: 400px;
+  } */
+  div.navbar-text {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  ul.nav-text li > a {
+    padding-left: 0;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+  div.col-7 {
+    width: 100%;
+  }
+ h1.search-title {
+    font-size: 40px;
+ }
+  div#text.columnHome {
+    margin-left: 0px;
+  }
+}
